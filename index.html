@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="بورتفوليو لمطور Flutter ومعلم برمجة. بناء تطبيقات موبايل رائعة وتدريس الأطفال أساسيات البرمجة. Portfolio for Flutter Developer and Programming Teacher. Building amazing mobile apps and inspiring the next generation.">
+    <meta name="keywords"
+        content="Flutter, Dart, تطوير تطبيقات, برمجة أطفال, أكاديمية برمجة, Flutter Developer, Programming Teacher">
+    <meta name="author" content="محمود خالد">
+    <title>محمود خالد - مطور Flutter ومعلم برمجة | Mahmoud Khaled - Flutter Developer & Programming Teacher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+        <script src="https://unpkg.com/typeit@8.8.3/dist/index.umd.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="preloader">
+      <div class="spinner"></div>
+  </div>
+</div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="القائمة الرئيسية | Main Navigation">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="الصفحة الرئيسية | Home">محمود خالد | Mahmoud Khaled</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link" data-key="home">الرئيسية | Home</a>
+                <a href="#about" class="nav-link" data-key="about">عني | About</a>
+                <a href="#projects" class="nav-link" data-key="projects">المشاريع | Projects</a>
+                <a href="#teaching" class="nav-link" data-key="teaching">التدريس | Teaching</a>
+                <a href="#skills" class="nav-link" data-key="skills">المهارات | Skills</a>
+                <a href="#contact" class="nav-link" data-key="contact">تواصل | Contact</a>
+            </div>
+            <div class="language-switcher">
+                <select id="languageSelect" class="language-select" aria-label="اختر اللغة | Select Language">
+                    <option value="ar">العربية | Arabic</option>
+                    <option value="en">English</option>
+                    <option value="zh">中文 | Chinese</option>
+                </select>
+            </div>
+            <div class="hamburger" id="hamburger" aria-label="قائمة الهاتف | Mobile Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Profile Photo -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 id="hero-title" class="hero-title">
+                    <span class="gradient-text" data-key="heroTitle"></span>
+                </h1>
+                <p class="hero-subtitle" data-key="heroSubtitle">بناء تطبيقات موبايل رائعة وإلهام الجيل القادم من
+                    المبرمجين | Building amazing mobile apps and inspiring the next generation of programmers</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary" data-key="viewWork">شاهد أعمالي | View My Work</a>
+                    <a href="#contact" class="btn btn-secondary" data-key="getInTouch">تواصل معي | Get In Touch</a>
+                    <a href="Mahmoud_Khaled_Resume.pdf" class="btn btn-cv" data-key="downloadCV">تحميل السيرة الذاتية |
+                        Download CV</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- EDIT HERE: Replace with your profile photo path -->
+                <img src="images/profile.png" alt="صورة شخصية | Profile Photo" class="profile-photo">
+            </div>
+        </div>
+        <div class="scroll-indicator" role="img" aria-label="التمرير لأسفل | Scroll Down">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" aria-labelledby="about-title">
+        <div class="container">
+            <h2 id="about-title" class="section-title" data-key="aboutTitle">عني | About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead" data-key="aboutLead">
+                        أنا <strong>محمود خالد</strong> — مطوّر تطبيقات Flutter ومدرّس برمجة بخبرة عملية في تنفيذ مشاريع
+                        حقيقية وتعليم الأطفال والمبتدئين بطريقة ممتعة وفعّالة. بحوّل الأفكار لتطبيقات بتخدم الناس فعلًا،
+                        وبخلّي كل طالب أفهمه صح قبل ما أعلّمه الكود.
+                        <span class="sr-only">|</span>
+                        I’m <strong>Mahmoud Khaled</strong> — a Flutter developer and programming instructor with
+                        real-world experience in building impactful mobile apps and teaching kids and beginners in a
+                        fun, practical way. I turn ideas into apps that matter — and make sure every student truly
+                        understands before they code.
+                    </p>
+
+                    <p data-key="aboutP1">
+                        عندي شغف ببناء تطبيقات ذكية وسلسة باستخدام Flutter، بمعماريات منظمة زي GetX وBloC، وتكامل
+                        احترافي مع Firebase وواجهات مصممة بعناية على مبادئ UX/UI. نفّذت أكتر من 15 تطبيق حقيقي من أول
+                        التصميم لحد النشر، وبأهتم بالتفاصيل اللي بتخلي التجربة ناعمة وسريعة، سواء للمستخدم أو للمطوّر
+                        اللي هيكمّل بعدي.
+                        <span class="sr-only">|</span>
+                        I’m passionate about building smart, smooth apps using Flutter with clean architectures (GetX /
+                        BloC), Firebase integration, and thoughtful UX/UI design. I’ve delivered 15+ real-world apps
+                        from concept to launch, focusing on clean code, scalable structure, and a seamless user
+                        experience.
+                    </p>
+
+                    <p data-key="aboutP2">
+                        في التدريس، أنا مش مجرّد معلّم — أنا مربي تقني. بستخدم أسلوب يعتمد على التطبيق العملي، المشاريع
+                        الصغيرة، المتابعة المستمرة، وتصوير مراحل التعلم علشان أولياء الأمور والمدارس يشوفوا التطور
+                        بوضوح. درّبت أكتر من 200 طالب، وقدّمت ورش وهاكاثونات للأطفال، وبأقدّم تدريب مخصص للأفراد
+                        والمدارس والفرق. شعاري دايمًا: <strong>افهامه صح، يبدع صح.</strong>
+                        <span class="sr-only">|</span>
+                        In teaching, I’m not just an instructor — I’m a mentor. I focus on hands-on learning, short
+                        projects, continuous tracking, and visual documentation so parents and schools can see real
+                        progress. I’ve trained 200+ students, led kids’ workshops and hackathons, and offer personalized
+                        training for individuals, schools, and teams. My motto: <strong>“Understand first — then
+                            create.”</strong>
+                    </p>
+
+
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card" data-stat="3+"> <i class="stat-icon fas fa-rocket"></i>
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label" data-key="stat1">تطبيق تم تطويره | Apps Developed</div>
+                        <canvas class="stat-chart"></canvas>
+                    </div>
+                    <div class="stat-card" data-stat="200">
+                        <i class="stat-icon fas fa-users"></i>
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label" data-key="stat2">طالب تم تدريسه | Students Taught</div>
+                        <canvas class="stat-chart"></canvas>
+                    </div>
+                    <div class="stat-card" data-stat="+1">
+                        <i class="stat-icon fas fa-award"></i>
+                        <div class="stat-number">+1</div>
+                        <div class="stat-label" data-key="stat3">سنوات خبرة | Years Experience</div>
+                        <canvas class="stat-chart"></canvas>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects" aria-labelledby="projects-title">
+        <div class="container">
+            <h2 id="projects-title" class="section-title" data-key="projectsTitle">المشاريع المميزة | Featured Projects
+            </h2>
+            <p class="section-subtitle" data-key="projectsSubtitle">عرض لأعمالي في تطوير Flutter | Showcase of my
+                Flutter development work</p>
+
+            <div class="projects-grid">
+                <article class="project-card" data-project="1">
+                    <div class="project-image">
+                        <img src="images/morbite.png" alt="لقطة شاشة تطبيق مربيتي | Morbity App">
+                        <div class="project-overlay">
+                            <button class="project-link btn-details" data-key="viewDetails">عرض التفاصيل | View
+                                Details</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title" data-key="project1Title">تطبيق مربيتي | Morbity App
+                        </h3>
+                        <p class="project-description" data-key="project1Desc">تطبيق يربط بين الأمهات ومقدمي خدمات
+                            الرعاية
+                            (مربيات، مدرسات، ممرضات). يمكن للأم عرض طلب، ويقوم مقدمو الخدمة بالتواصل. | An app
+                            connecting mothers
+                            with care providers (nannies, teachers, nurses). Mothers can post requests, and providers
+                            can
+                            connect.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">GetX</span>
+                            <span class="tag">Chat</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-project="2">
+                    <div class="project-image">
+                        <img src="images/project2.png"
+                            alt="لقطة شاشة تطبيق ملصقات واتساب | WhatsApp Sticker App Screenshot">
+                        <div class="project-overlay">
+                            <button class="project-link btn-details" data-key="viewDetails">عرض التفاصيل | View
+                                Details</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title" data-key="project2Title">تطبيق ملصقات واتساب | WhatsApp Sticker App
+                        </h3>
+                        <p class="project-description" data-key="project2Desc">تطبيق مخصص لعرض ملصقات فنانة معينة، مع
+                            إمكانية
+                            إضافة هذه الملصقات مباشرة إلى واتساب بضغطة واحدة. | A custom app to display an artist's
+                            stickers, with
+                            the ability to add them directly to WhatsApp in one click.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">WhatsApp Integration</span>
+                            <span class="tag">Animations</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" data-project="3">
+                    <div class="project-image">
+                        <img src="images/project3.png" alt="لقطة شاشة تطبيق صلة الرحم | Kinship App Screenshot">
+                        <div class="project-overlay">
+                            <button class="project-link btn-details" data-key="viewDetails">عرض التفاصيل | View
+                                Details</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title" data-key="project3Title">تطبيق صلة الرحم | Kinship App</h3>
+                        <p class="project-description" data-key="project3Desc">تطبيق لتسهيل التواصل بين أفراد العائلة
+                            وتنظيم
+                            الصدقات. يهدف لتقوية الروابط الأسرية ونشر الخير. | An app to facilitate communication
+                            between family
+                            members and organize charity. It aims to strengthen family bonds.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Notifications</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDesc"></p>
+            <div class="modal-details">
+                <p><strong>تاريخ البداية:</strong> <span id="modalStart"></span></p>
+                <p><strong>تاريخ النهاية:</strong> <span id="modalEnd"></span></p>
+                <p><strong>السعر:</strong> <span id="modalPrice"></span></p>
+                <p><strong>التقييم:</strong> <span id="modalRating"></span></p>
+                <p><strong>تفاصيل إضافية:</strong> <span id="modalExtra"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Teaching Section -->
+    <section id="teaching" class="teaching" aria-labelledby="teaching-title">
+        <div class="container">
+            <h2 id="teaching-title" class="section-title" data-key="teachingTitle">خبرة التدريس | Teaching Experience
+            </h2>
+            <p class="section-subtitle" data-key="teachingSubtitle">إلهام العقول الشابة في أكاديمية الأطفال | Inspiring
+                young minds at Kids' Academy</p>
+
+            <div class="teaching-content">
+                <div class="teaching-gallery-wrapper">
+                    <div class="teaching-gallery">
+
+                        <div class="gallery-slide active">
+                            <img src="images/mon.jpeg" alt="طلابي في درس | Students in class">
+                            <div class="gallery-caption">طلابي في درس برمجة</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/studens.jpeg" alt="فصل تدريسي | Teaching class">
+                            <div class="gallery-caption">فصل تدريسي ممتع</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/ddf.jpeg" alt="أنا أشرح | Me explaining">
+                            <div class="gallery-caption">أنا أشرح مفاهيم Flutter</div>
+                        </div>
+
+                    </div>
+                    <button class="gallery-btn prev" aria-label="Previous Slide">&#10094;</button>
+                    <button class="gallery-btn next" aria-label="Next Slide">&#10095;</button>
+                    <div class="gallery-dots"></div>
+                </div>
+                <!-- <div class="teaching-gallery">
+                    <div class="gallery-carousel">
+                        <img src="../images/students.jpg" alt="طلابي في درس | Students in class">
+                        <p class="gallery-caption">طلابي في درس برمجة</p>
+                    </div>
+                    <div class="gallery-carousel">
+                        <img src="../images/teaching-class.jpg" alt="فصل تدريسي | Teaching class">
+                        <p class="gallery-caption">فصل تدريسي ممتع</p>
+                    </div>
+                    <div class="gallery-carousel">
+                        <img src="../images/explaining.jpg" alt="أنا أشرح | Me explaining">
+                        <p class="gallery-caption">أنا أشرح مفاهيم Flutter</p>
+                    </div>
+                </div> -->
+                <div class="teaching-info">
+                    <h3 data-key="teachingRole">مدرس برمجة | Programming Instructor</h3>
+                    <p class="teaching-academy" data-key="academyName">أكاديمية الأطفال للبرمجة | Kids' Programming
+                        Academy</p>
+                    <p class="teaching-description" data-key="teachingDesc">أقوم بتدريس أساسيات البرمجة وتطوير تطبيقات
+                        الموبايل للأطفال والمراهقين، مما يجعل المفاهيم المعقدة سهلة الفهم وممتعة. فلسفتي التعليمية تركز
+                        على التعلم العملي والإبداع وبناء الثقة في المتعلمين الصغار | I teach programming basics and
+                        mobile app development to children and teens, making complex concepts easy to understand and
+                        fun. My teaching philosophy focuses on hands-on learning, creativity, and building confidence in
+                        young learners</p>
+
+                    <div class="teaching-topics">
+                        <h4 data-key="topicsTitle">المواضيع التي أدرسها | Topics I Teach</h4>
+                        <ul>
+                            <li data-key="topic1">أساسيات البرمجة (المتغيرات، الحلقات، الدوال) | Programming Basics
+                                (variables, loops, functions)</li>
+                            <li data-key="topic2">تطوير تطبيقات الموبايل باستخدام Flutter | Mobile App Development with
+                                Flutter</li>
+                            <li data-key="topic3">حل المشكلات والتفكير المنطقي | Problem-Solving and Logical Thinking
+                            </li>
+                            <li data-key="topic4">أساسيات تصميم واجهة المستخدم | UI Design Basics</li>
+                            <li data-key="topic5">التعلم القائم على المشاريع | Project-Based Learning</li>
+                        </ul>
+                    </div>
+
+                    <div class="teaching-achievements">
+                        <h4 data-key="achievementsTitle">الإنجازات | Achievements</h4>
+                        <ul>
+                            <li data-key="ach1">قمت بتدريس أكثر من 200 طالب أساسيات البرمجة بنجاح | Successfully taught
+                                over 200 students programming basics</li>
+                            <li data-key="ach2">طورت منهجًا مخصصًا للمتعلمين الصغار | Developed customized curriculum
+                                for young learners</li>
+                            <li data-key="ach3">نظمت ورش عمل برمجية وهاكاثونات للأطفال | Organized coding workshops and
+                                hackathons for kids</li>
+                            <li data-key="ach4">حصلت على تقييمات ممتازة من أولياء الأمور والطلاب | Received excellent
+                                ratings from parents and students</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills" aria-labelledby="skills-title">
+        <div class="container">
+            <h2 id="skills-title" class="section-title" data-key="skillsTitle">المهارات والخبرات | Skills and
+                Experiences</h2>
+
+            <div class="skills-grid">
+
+
+
+                <!-- 🧠 تطوير الموبايل | Mobile Development -->
+                <div class="skill-category">
+                    <h3 data-key="mobileDev">تطوير الموبايل | Mobile Development</h3>
+                    <div class="skill-items">
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Flutter</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Dart</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">GetX Architecture</span>
+                                <span class="skill-level">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Firebase Integration</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 💻 لغات البرمجة | Programming Languages -->
+                <div class="skill-category">
+                    <h3 data-key="progLangs">لغات البرمجة | Programming Languages</h3>
+                    <div class="skill-items">
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Dart</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 🎨 التصميم والأدوات | Design and Tools -->
+                <div class="skill-category">
+                    <h3 data-key="designTools">التصميم والأدوات | Design and Tools</h3>
+                    <div class="skill-items">
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Figma</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Adobe XD</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Canva</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 👨‍🏫 التدريس والمهارات الشخصية | Teaching and Soft Skills -->
+                <div class="skill-category">
+                    <h3 data-key="teachingSkills">التدريس والمهارات الشخصية | Teaching and Soft Skills</h3>
+                    <div class="skill-items">
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Teaching Programming to Kids</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Communication</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Mentorship & Motivation</span>
+                                <span class="skill-level">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Creative Thinking</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <h2 id="contact-title" class="section-title" data-key="contactTitle">لنتواصل | Let's Connect</h2>
+            <p class="section-subtitle" data-key="contactSubtitle">هل لديك مشروع في ذهنك أو تريد مناقشة فرص التدريس؟ |
+                Do you have a project in mind or want to discuss teaching opportunities?</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <a href="mailto:your.email@example.com" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                        <div class="contact-details">
+                            <h4 data-key="emailLabel">البريد الإلكتروني | Email</h4>
+                            <a href="mailto:mahmoudkhaledaltaramsi@gmail.com">mahmoudkhaledaltaramsi@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <a href="tel:+1234567890" class="contact-icon"><i class="fas fa-phone"></i></a>
+                        <div class="contact-details">
+                            <h4 data-key="phoneLabel">الهاتف | Phone</h4>
+                            <a href="tel:+201000848623">+201000848623</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <a href="#" class="contact-icon"><i class="fas fa-map-marker-alt"></i></a>
+                        <div class="contact-details">
+                            <h4 data-key="locationLabel">الموقع | Location</h4>
+                            <p>القاهرة، مصر | Cairo, Egypt</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/ALTaramsi2024" target="_blank" rel="noopener noreferrer"
+                            class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/201000848623" target="_blank" rel="noopener noreferrer"
+                            class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://github.com/mahmoud-altaramsi" target="_blank" rel="noopener noreferrer"
+                            class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/mahmoud-altaramsi" target="_blank" rel="noopener noreferrer"
+                            class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/mahmoud-altaramsi" target="_blank" rel="noopener noreferrer"
+                            class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name" class="sr-only" data-key="nameLabel">الاسم | Name</label>
+                        <input type="text" id="name" placeholder="الاسم | Name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="sr-only" data-key="emailInput">البريد الإلكتروني | Email</label>
+                        <input type="email" id="email" placeholder="البريد الإلكتروني | Email" required
+                            aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="sr-only" data-key="subjectLabel">الموضوع | Subject</label>
+                        <input type="text" id="subject" placeholder="الموضوع | Subject" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="sr-only" data-key="messageLabel">رسالتك | Message</label>
+                        <textarea id="message" rows="5" placeholder="رسالتك | Message" required
+                            aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-key="sendMsg">إرسال الرسالة | Send
+                        Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+<a href="#home" id="backToTopBtn" aria-label="العودة للأعلى | Back to Top">
+    <i class="fas fa-arrow-up"></i>
+</a>
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p data-key="copyright">&copy; 2025 محمود خالد. جميع الحقوق محفوظة | © 2025 Mahmoud Khaled. All rights reserved</p>
+            <!-- <p data-key="builtWith">تم البناء بـ ❤️ باستخدام HTML, CSS, و JavaScript | Built with ❤️ using HTML, CSS,
+                and JavaScript</p> -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
