@@ -914,7 +914,7 @@ section {
 
 .teaching-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr; /* <-- تم التعديل هنا */
     gap: var(--spacing-lg);
     margin-top: var(--spacing-lg);
     align-items: start;
@@ -1582,3 +1582,4 @@ textarea:focus,
 a, button, .btn, .nav-link, .project-card, .skill-category, .stat-card {
     -webkit-tap-highlight-color: transparent;
 }
+
