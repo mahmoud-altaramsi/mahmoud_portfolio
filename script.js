@@ -28,6 +28,10 @@ const translations = {
         project2Desc: 'تطبيق مخصص لعرض ملصقات فنانة معينة، مع إمكانية إضافة هذه الملصقات مباشرة إلى واتساب بضغطة واحدة.',
         project3Title: 'تطبيق صلة الرحم',
         project3Desc: 'تطبيق لتسهيل التواصل بين أفراد العائلة وتنظيم الصدقات. يهدف لتقوية الروابط الأسرية ونشر الخير.',
+        // ... (بعد project3Desc)
+project4Title: 'تطبيق إدارة المصروفات',
+project4Desc: 'تطبيق احترافي لتتبع النفقات الشخصية والدخل، مع تقارير شهرية ورسوم بيانية لتوضيح أنماط الإنفاق.',
+// ...
         viewDetails: 'عرض التفاصيل',
         teachingTitle: 'خبرة التدريس',
         teachingSubtitle: 'إلهام العقول الشابة في أكاديمية الأطفال',
@@ -93,6 +97,10 @@ const translations = {
         project2Desc: 'A custom app to display an artist\'s stickers, with the ability to add them directly to WhatsApp in one click.',
         project3Title: 'Kinship (Sila) App',
         project3Desc: 'An app to facilitate communication between family members and organize charity. It aims to strengthen family bonds and spread good.',
+        // ... (after project3Desc)
+project4Title: 'Expense Manager App',
+project4Desc: 'A professional app to track personal expenses and income, with monthly reports and charts to visualize spending patterns.',
+// ...
         viewDetails: 'View Details',
         teachingTitle: 'Teaching Experience',
         teachingSubtitle: 'Inspiring young minds at Kids\' Academy',
@@ -157,7 +165,11 @@ const translations = {
         project2Title: 'WhatsApp 贴纸应用',
         project2Desc: '一款显示艺术家贴纸的自定义应用程序，用户可以一键将其直接添加到 WhatsApp。',
         project3Title: '亲情 (Sila) 应用',
-        project3Desc: '一款促进家庭成员沟通和组织慈善的应用。旨在加强家庭联系，传播善行。',
+        
+        // ... (after project3Desc)
+project4Title: '个人支出管理应用',
+project4Desc: '一个用于跟踪个人支出和收入的专业应用，包含月度报告和图表以可视化支出模式。',
+// ...project3Desc: '一款促进家庭成员沟通和组织慈善的应用。旨在加强家庭联系，传播善行。',
         viewDetails: '查看详情',
         teachingTitle: '教学经验',
         teachingSubtitle: '在儿童学院启发年轻的心灵',
@@ -686,7 +698,31 @@ const projectData = {
             en: 'Uses notifications to remind you to connect. Available for everyone to benefit from in strengthening family ties.',
             zh: '使用通知提醒您联系。可供所有人用以加强家庭联系。'
         }
+    
+    // ... (بعد بيانات المشروع 3)
+    },
+    4: { // <-- هذا هو الكود الجديد
+        title: {
+            ar: 'تطبيق إدارة المصروفات الشخصية',
+            en: 'Personal Expense Manager App',
+            zh: '个人支出管理应用'
+        },
+        desc: {
+            ar: 'تطبيق Flutter متكامل يساعد المستخدمين على تسجيل ومتابعة نفقاتهم اليومية ودخلهم. التطبيق يوفر تصنيفات مخصصة، تقارير شهرية مفصلة، ورسوم بيانية تفاعلية.',
+            en: 'A comprehensive Flutter app that helps users log and track their daily expenses and income. The app provides custom categories, detailed monthly reports, and interactive charts.',
+            zh: '一个全面的 Flutter 应用程序，可帮助用户记录和跟踪他们的日常支出和收入。该应用程序提供自定义类别、详细的月度报告和交互式图表。'
+        },
+        start: '2024-05-01',
+        end: '2024-07-15',
+        price: '$3,800', // (يمكنك تغيير هذه القيم)
+        rating: '★★★★★ (4.8/5)',
+        extra: {
+            ar: 'تم بناؤه باستخدام GetX لإدارة الحالة و Firebase (Firestore) لمزامنة البيانات. يتميز بواجهة مستخدم نظيفة تركز على سهولة إدخال البيانات.',
+            en: 'Built with GetX for state management and Firebase (Firestore) for data synchronization. Features a clean UI focused on easy data entry.',
+            zh: '使用 GetX 进行状态管理，使用 Firebase (Firestore) 进行数据同步。具有专注于轻松数据输入的简洁用户界面。'
+        }
     }
+// ... (لا تنس إغلاق القوس })
 };
 
 document.querySelectorAll('.btn-details').forEach(btn => {
@@ -776,4 +812,5 @@ if ('IntersectionObserver' in window) {
 
 // ===== CONSOLE EASTER EGG =====
 console.log('%c👋 مرحبا! | Hello! | 你好！', 'font-size: 20px; color: #64ffda; font-weight: bold;');
+
 console.log('%cتبحث عن شيء؟ تواصل معي! | Looking for something? Contact me! | 在找什么？联系我！', 'font-size: 14px; color: #8892b0;');
