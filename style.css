@@ -671,7 +671,7 @@ section {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* تأكد أنه 350px */
     gap: var(--spacing-md);
     margin-top: var(--spacing-lg);
 }
@@ -914,7 +914,7 @@ section {
 
 .teaching-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr; /* <-- تم التعديل هنا */
     gap: var(--spacing-lg);
     margin-top: var(--spacing-lg);
     align-items: start;
@@ -1395,7 +1395,7 @@ section {
     .hero-content,
     .teaching-content,
     .contact-content {
-        grid-template-columns: 1fr;
+        
     }
     
     .hero-title {
@@ -1432,30 +1432,31 @@ section {
     /* (... الأكواد الموجودة مسبقاً ...) */
     
     /* === تحسينات التجاوب المضافة === */
-    .project-title {
-        font-size: 1.35rem; /* تصغير عنوان المشروع */
-    }
-    
-    .project-description {
-        font-size: 0.95rem; /* تصغير وصف المشروع */
-    }
-    
-    .about-text .lead {
-        font-size: 1.25rem; /* تصغير الخط الرئيسي في "عني" */
-    }
-    
-    .about-text p {
-        font-size: 1rem;
-    }
-    
-    .teaching-info h3 {
-        font-size: 1.5rem;
-    }
-    
-    .teaching-description {
-        font-size: 0.95rem;
-    }
-    /* === نهاية التحسينات === */
+    /* === تحسينات التجاوب (768px) === */
+.project-title {
+    font-size: 1.35rem; /* تصغير عنوان المشروع */
+}
+
+.project-description {
+    font-size: 0.95rem; /* تصغير وصف المشروع */
+}
+
+.about-text .lead {
+    font-size: 1.25rem; /* تصغير الخط الرئيسي في "عني" */
+}
+
+.about-text p {
+    font-size: 1rem;
+}
+
+.teaching-info h3 {
+    font-size: 1.5rem;
+}
+
+.teaching-description {
+    font-size: 0.95rem;
+}
+/* === نهاية التحسينات === */
 }
     .nav-links {
         position: fixed;
@@ -1530,55 +1531,55 @@ section {
     }
     /* (... الأكواد الموجودة مسبقاً ...) */
 
-    /* === تحسينات التجاوب المضافة === */
-    .project-title {
-        font-size: 1.2rem; /* تصغير إضافي لعنوان المشروع */
-    }
-    
-    .project-description {
-        font-size: 0.9rem;
-        line-height: 1.5; /* تحسين تباعد الأسطر */
-    }
-    
-    .about-text .lead {
-        font-size: 1.15rem;
-        margin-bottom: var(--spacing-sm);
-    }
-    
-    .about-text p {
-        font-size: 0.95rem;
-    }
+/* === تحسينات التجاوب (480px) === */
+.project-title {
+    font-size: 1.2rem; /* تصغير إضافي لعنوان المشروع */
+}
 
-    /* إصلاح النافذة المنبثقة (Modal) على الموبايل */
-    .modal-content {
-        /* تقليل الحشو الداخلي ليناسب الشاشة */
-        padding: var(--spacing-sm); 
-        margin: 5% auto; /* تقليل الهامش العلوي */
-    }
-    
-    .modal-title {
-        font-size: 1.5rem; /* تصغير عنوان النافذة */
-        margin-bottom: var(--spacing-sm);
-    }
-    
-    .modal-description {
-        font-size: 1rem; /* تصغير الوصف داخل النافذة */
-        line-height: 1.6;
-    }
-    
-    .modal-details {
-        padding: var(--spacing-sm);
-    }
-    
-    .detail-item {
-        padding: var(--spacing-xs) 0;
-        font-size: 0.9rem;
-    }
-    
-    .detail-item i {
-        font-size: 1rem;
-    }
-    /* === نهاية التحسينات === */
+.project-description {
+    font-size: 0.9rem;
+    line-height: 1.5; /* تحسين تباعد الأسطر */
+}
+
+.about-text .lead {
+    font-size: 1.15rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.about-text p {
+    font-size: 0.95rem;
+}
+
+/* إصلاح النافذة المنبثقة (Modal) على الموبايل */
+.modal-content {
+    /* تقليل الحشو الداخلي ليناسب الشاشة */
+    padding: var(--spacing-sm); 
+    margin: 5% auto; /* تقليل الهامش العلوي */
+}
+
+.modal-title {
+    font-size: 1.5rem; /* تصغير عنوان النافذة */
+    margin-bottom: var(--spacing-sm);
+}
+
+.modal-description {
+    font-size: 1rem; /* تصغير الوصف داخل النافذة */
+    line-height: 1.6;
+}
+
+.modal-details {
+    padding: var(--spacing-sm);
+}
+
+.detail-item {
+    padding: var(--spacing-xs) 0;
+    font-size: 0.9rem;
+}
+
+.detail-item i {
+    font-size: 1rem;
+}
+/* === نهاية التحسينات === */= نهاية التحسينات === */
 }
     
     .hero-title {
@@ -1663,3 +1664,4 @@ a, button, .btn, .nav-link, .project-card, .skill-category, .stat-card {
     -webkit-tap-highlight-color: transparent;
 
 }
+
