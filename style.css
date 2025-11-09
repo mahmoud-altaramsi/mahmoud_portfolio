@@ -671,7 +671,7 @@ section {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--spacing-md);
     margin-top: var(--spacing-lg);
 }
@@ -1429,6 +1429,34 @@ section {
 }
 
 @media (max-width: 768px) {
+    /* (... الأكواد الموجودة مسبقاً ...) */
+    
+    /* === تحسينات التجاوب المضافة === */
+    .project-title {
+        font-size: 1.35rem; /* تصغير عنوان المشروع */
+    }
+    
+    .project-description {
+        font-size: 0.95rem; /* تصغير وصف المشروع */
+    }
+    
+    .about-text .lead {
+        font-size: 1.25rem; /* تصغير الخط الرئيسي في "عني" */
+    }
+    
+    .about-text p {
+        font-size: 1rem;
+    }
+    
+    .teaching-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .teaching-description {
+        font-size: 0.95rem;
+    }
+    /* === نهاية التحسينات === */
+}
     .nav-links {
         position: fixed;
         top: 70px;
@@ -1500,6 +1528,58 @@ section {
         --spacing-lg: 2rem;
         --spacing-xl: 3rem;
     }
+    /* (... الأكواد الموجودة مسبقاً ...) */
+
+    /* === تحسينات التجاوب المضافة === */
+    .project-title {
+        font-size: 1.2rem; /* تصغير إضافي لعنوان المشروع */
+    }
+    
+    .project-description {
+        font-size: 0.9rem;
+        line-height: 1.5; /* تحسين تباعد الأسطر */
+    }
+    
+    .about-text .lead {
+        font-size: 1.15rem;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .about-text p {
+        font-size: 0.95rem;
+    }
+
+    /* إصلاح النافذة المنبثقة (Modal) على الموبايل */
+    .modal-content {
+        /* تقليل الحشو الداخلي ليناسب الشاشة */
+        padding: var(--spacing-sm); 
+        margin: 5% auto; /* تقليل الهامش العلوي */
+    }
+    
+    .modal-title {
+        font-size: 1.5rem; /* تصغير عنوان النافذة */
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .modal-description {
+        font-size: 1rem; /* تصغير الوصف داخل النافذة */
+        line-height: 1.6;
+    }
+    
+    .modal-details {
+        padding: var(--spacing-sm);
+    }
+    
+    .detail-item {
+        padding: var(--spacing-xs) 0;
+        font-size: 0.9rem;
+    }
+    
+    .detail-item i {
+        font-size: 1rem;
+    }
+    /* === نهاية التحسينات === */
+}
     
     .hero-title {
         font-size: 1.75rem;
@@ -1581,4 +1661,5 @@ textarea:focus,
 /* Smooth Hover Effects */
 a, button, .btn, .nav-link, .project-card, .skill-category, .stat-card {
     -webkit-tap-highlight-color: transparent;
+
 }
