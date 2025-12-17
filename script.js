@@ -32,6 +32,8 @@ const translations = {
         project4Title: 'تطبيق إدارة المصروفات',
         project4Desc: 'تطبيق احترافي لتتبع النفقات الشخصية والدخل، مع تقارير شهرية ورسوم بيانية لتوضيح أنماط الإنفاق.',
         // ...
+        project5Title: 'حاسبة الوزن المثالي (BMI)',
+        project5Desc: 'تطبيق صحي متطور لحساب مؤشر كتلة الجسم وتقديم نصائح صحية بناءً على النتائج العالمية.',
         viewDetails: 'عرض التفاصيل',
         teachingTitle: 'خبرة التدريس',
         teachingSubtitle: 'إلهام العقول الشابة في أكاديمية الأطفال',
@@ -100,6 +102,8 @@ const translations = {
         // ... (after project3Desc)
         project4Title: 'Expense Manager App',
         project4Desc: 'A professional app to track personal expenses and income, with monthly reports and charts to visualize spending patterns.',
+        project5Title: 'BMI Calculator',
+        project5Desc: 'An advanced health app to calculate BMI and provide health advice based on global standards.',
         viewDetails: 'View Details',
         teachingTitle: 'Teaching Experience',
         teachingSubtitle: 'Inspiring young minds at Kids\' Academy',
@@ -167,6 +171,8 @@ const translations = {
         // ... (after project3Desc)
         project4Title: '个人支出管理应用',
         project4Desc: '一个用于跟踪个人支出和收入的专业应用，包含月度报告和图表以可视化支出模式。',
+        project5Title: 'BMI 指数计算器',
+        project5Desc: '一款先进的健康应用，用于计算 BMI 并根据国际标准提供健康建议。',
         viewDetails: '查看详情',
         teachingTitle: '教学经验',
         teachingSubtitle: '在儿童学院启发年轻的心灵',
@@ -719,6 +725,27 @@ const projectData = {
             zh: '使用 GetX 进行状态管理，使用 Firebase (Firestore) 进行数据同步。具有专注于轻松数据输入的简洁用户界面。'
         }
     }
+    5: {
+        title: {
+            ar: 'تطبيق حاسبة الوزن المثالي (BMI)',
+            en: 'BMI (Body Mass Index) Calculator',
+            zh: 'BMI 指数计算器'
+        },
+        desc: {
+            ar: 'هل وزنك مثالي؟ هل تعاني من النحافة أو زيادة الوزن؟ هذا التطبيق هو أداتك الصحية الأولى لمعرفة حالة جسمك بدقة. يقوم بالحسابات المعقدة نيابة عنك ويعطيك النتيجة فوراً مع نصيحة واضحة بناءً على المقياس العالمي الذي يستخدمه الأطباء والمدربون.',
+            en: 'Is your weight ideal? This BMI Calculator is your primary health tool to accurately determine your body status. It performs complex calculations for you and provides instant results with clear advice based on the global standards used by doctors and trainers.',
+            zh: '您的体重理想吗？这款 BMI 计算器是您的首选健康工具。它能为您进行复杂的计算，并根据医生和教练使用的国际标准，立即提供结果和清晰的建议。'
+        },
+        start: '2024-08-10',
+        end: '2024-09-01',
+        price: '$1,200',
+        rating: '★★★★★ (4.9/5)',
+        extra: {
+            ar: 'يتميز التطبيق بواجهة مستخدم تفاعلية، وتغيير ألوان النتيجة بناءً على حالة الجسم (نحافة، مثالي، زيادة وزن).',
+            en: 'The app features an interactive UI, and dynamic color changes based on the body status (Underweight, Ideal, Overweight).',
+            zh: '该应用程序具有交互式用户界面，并根据身体状况（体重不足、理想、超重）动态更改颜色。'
+        }
+    }
 // ... (لا تنس إغلاق القوس })
 };
 
@@ -811,5 +838,6 @@ if ('IntersectionObserver' in window) {
 console.log('%c👋 مرحبا! | Hello! | 你好！', 'font-size: 20px; color: #64ffda; font-weight: bold;');
 
 console.log('%cتبحث عن شيء؟ تواصل معي! | Looking for something? Contact me! | 在找什么？联系我！', 'font-size: 14px; color: #8892b0;');
+
 
 
