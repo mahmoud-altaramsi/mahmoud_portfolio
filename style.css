@@ -672,8 +672,8 @@ section {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: var(--spacing-lg);
-    justify-content: center; /* يضمن توسيط العناصر إذا لم يكتمل السطر */
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
 }
 
 .project-card {
@@ -1654,6 +1654,7 @@ textarea:focus,
 a, button, .btn, .nav-link, .project-card, .skill-category, .stat-card {
     -webkit-tap-highlight-color: transparent;
 }
+
 
 
 
