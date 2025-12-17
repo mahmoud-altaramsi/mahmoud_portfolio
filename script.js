@@ -724,7 +724,7 @@ const projectData = {
             en: 'Built with GetX for state management and Firebase (Firestore) for data synchronization. Features a clean UI focused on easy data entry.',
             zh: '使用 GetX 进行状态管理，使用 Firebase (Firestore) 进行数据同步。具有专注于轻松数据输入的简洁用户界面。'
         }
-    }
+    },
    5: {
         title: {
             ar: 'تطبيق حاسبة الوزن المثالي (BMI)',
@@ -838,6 +838,7 @@ if ('IntersectionObserver' in window) {
 console.log('%c👋 مرحبا! | Hello! | 你好！', 'font-size: 20px; color: #64ffda; font-weight: bold;');
 
 console.log('%cتبحث عن شيء؟ تواصل معي! | Looking for something? Contact me! | 在找什么？联系我！', 'font-size: 14px; color: #8892b0;');
+
 
 
 
